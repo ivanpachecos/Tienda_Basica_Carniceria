@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #252326;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+  color: aliceblue;
+  font-weight: 800;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.header .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-weight: 600;
+}
+
+.header .navbar ul li a:hover {
+  color: rgb(223, 211, 211);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #4e4b5076;
+  padding: 20px;
+  min-width: 400px;
+  min-width: 400px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  color: white;
+}
+
+td {
+  color: white;
+}
+
+.borrar {
+  background-color: #e45d34;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #dfdde0;
+  font-weight: 500;
+}
+
+.header-content {
+  position: relative;
+  text-align: center;
+
+  margin-top: 300px;
+}
+
+.header-content h1 {
+  font-size: 70px;
+  color: aliceblue;
+  font-weight: 800;
+}
+
+.header-content p {
+  font-size: 18px;
+  padding: 0 200px;
+  color: #887E7B;
+  margin-bottom: 80px;
+}
+
+.botons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-1 {
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px;
+  padding: 12px 0; 
+  border-radius: 25px;
+  color: aliceblue;
+  text-transform: uppercase;
+  background-color: #e45d34;
+}
+
+.btn-1:hover {
+  background-color: #C23B11;
+}
+
+.socials-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  gap: 22px;
+}
+
+.socials-1 img{
+  width: 24px;
+  height: 24px;
+ cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 150px;
+}
+
+.recetas {
+  display: flex;
+  padding: 120px 0;
+}
+
+.recetas-1 {
+  width: 50%;
+}
+
+.recetas-1 h3{
+  font-size: 18px;
+  color: aliceblue;
+}
+
+.recetas-1 p {
+  color: #e45d34;
+}
+
+.recetas-1 hr {
+  margin: 10px 0;
+  border: 1px solid #312F32;
+}
+
+.recetas-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.recetas-2 h2{
+  font-size: 55px;
+  line-height: 55px;
+  color: aliceblue;
+}
+
+.platillos {
+  padding: 50px 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.swiper-button-prev::after {
+  font-size: 25px;
+
+}
+
+.swiper-button-next::after {
+  font-size: 25px;
+}
+
+.swiper-button-prev {
+  color: #e45d34;
+}
+
+.swiper-button-next {
+  color: #e45d34;
+}
+
+.swiper-pagination-bullet {
+  background-color: aliceblue;
+  opacity: 1;
+  top: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e45d34;
+}
+
+.platillo {
+  font-size: 16px;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.precio{
+  font-size: 18px;
+  color: #e45d34 !important;
+}
+
+.platillo img {
+  width: 200px;
+
+}
+
+.platillo p {
+  font-size: 16px;
+  color: aliceblue;
+  margin-top: 15px;
+  padding: 0 70px;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e45d34;
+  color: aliceblue;
+  margin-top: 25px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.btn-2:hover {
+  background-color: #C23B11;
+}
+
+.c1,  .platillo .c2 {
+  color: #887E7B
+} 
+
+.btn-3 {
+  display: inline-block;
+  color: aliceblue;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin-top: 25px;
+  border: 1px solid #dfdde0;
+
+}
+
+
+.btn-3:hover {
+  background-color: #e45d34;
+  border: 1px solid #e45d34;
+}
+
+.footer{
+  padding-bottom: 50px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  width: 25%;
+
+}
+
+.link h3 {
+  font-size: 20px;
+  color: aliceblue;
+  margin-bottom: 20px;
+
+}
+
+.link p {
+  color: #887E7B;
+  font-size: 14px;
+  margin: 0 50px 15px 0;
+}
+
+.link ul li a {
+  color: aliceblue;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-2 img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+}
+
+.link form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inp {
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn-4 {
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: #61bc00;
+  border: 0;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+@media (max-width: 911px) {
+
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header-content {
+    flex-direction:  column;
+    padding: 30px;
+    margin-top: 150px;
+  }
+
+  .header-content h1 {
+    font-size: 40px;
+
+  }
+
+  .header-content p {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .botons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+  }
+
+  .socials-1 {
+    display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .recetas {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .recetas-1{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .recetas-2 {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .link {
+    width: 70%;
+  }
+
+  .link p {
+    margin: 0 0 25px 0;
+  }
+
+  .social-2 {
+    margin-bottom: 15px;
+  }
+
+}
